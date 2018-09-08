@@ -1,0 +1,23 @@
+{
+  "name": "firestore-trial",
+  "version": "1.0.0",
+  "description": "firestore-trial =============== Firestoreのお試し",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TatsuyaMiyado/firestore-trial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TatsuyaMiyado/firestore-trial/issues"
+  },
+  "homepage": "https://github.com/TatsuyaMiyado/firestore-trial#readme",
+  "dependencies": {
+    "firebase-admin": "^5.13.1"
+  }
+}
