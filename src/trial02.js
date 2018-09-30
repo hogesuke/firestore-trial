@@ -77,6 +77,18 @@ citiesRef.doc('BJ').set({
         console.log(doc.id, ' => ', doc.data());
       });
     }
+
+    console.log('\n', '=== whereを連結し、フィルタしてdocを取得 ===', '\n');
+    {
+      const querySnapshot = await citiesRef
+        .where('capital', '==', true)
+        .where('population', '>', 1000000)
+        .get();
+
+      querySnapshot.forEach(function (doc) {
+        console.log(doc.id, ' => ', doc.data());
+      });
+    }
   } catch (error) {
     console.log('Error getting documents: ', error);
   }
