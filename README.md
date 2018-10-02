@@ -7,3 +7,4 @@ Firestoreのお試し
 |---|---|
 |trial01.js|データの追加|
 |trial02.js|データの取得|
+|trial03.js|データの削除|
