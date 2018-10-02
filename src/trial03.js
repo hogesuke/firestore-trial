@@ -11,15 +11,15 @@ const db = admin.firestore();
 const moviesRef = db.collection('movies');
 
 // データ書き込み
-moviesRef.doc().set({
+moviesRef.doc('SA').set({
   title: '猿の惑星',
   release: 1968,
 });
-moviesRef.doc().set({
+moviesRef.doc('SW').set({
   title: 'スターウォーズ',
   release: 1977,
 });
-moviesRef.doc().set({
+moviesRef.doc('GZ').set({
   title: 'ゴジラ',
   release: 1954,
 });
@@ -41,7 +41,7 @@ moviesRef.doc().set({
 
       querySnapshot.forEach(doc => {
         console.log('DELETE', doc.id);
-        doc.delete();
+        doc.ref.delete();
       });
     }
     
